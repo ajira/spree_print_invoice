@@ -20,7 +20,8 @@ module Spree
           quantity: item.quantity,
           total: item.total,
           pre_tax_amount: item.pre_tax_amount, 
-          tax_total: item.included_tax_total
+          tax_total: item.included_tax_total,
+          product: item.variant.product
         )
       end
     end
